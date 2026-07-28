@@ -1,5 +1,7 @@
 # Crash Site
 
+**[Play Crash Site in your browser](https://beardhack.github.io/Crash-Site/)**
+
 Crash Site is a complete, linear pixel point-and-click science-fiction adventure for the browser. A failed cryostasis cycle wakes the player 887 million years late inside Research Bay One. They must stabilize life support, restore the damaged assistant AI Apollo, follow a dead crew's Cargo Rover beacon, and interrupt an orbital terraformer that has mistaken the planet for an empty world.
 
 The intended first playthrough is 20–30 minutes. The game is turn-based: oxygen, storms, and machine events never advance while the player reads or thinks. It has one authored ending, no randomization, no combat, no dead ends, contextual hints, autosave, a finite signal-trace scan system, and responsive layouts.
