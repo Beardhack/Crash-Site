@@ -1060,7 +1060,7 @@ function TitleScreen({
 }) {
   return (
     <main className="title-screen">
-      <img src="/assets/rooms/station-exterior.png" alt="" />
+      <img src={`${import.meta.env.BASE_URL}assets/rooms/station-exterior.png`} alt="" />
       <div className="title-screen__grade" />
       <div className="title-screen__grid" />
       <section className="title-card">
@@ -1119,7 +1119,7 @@ function EndingScreen({
 }) {
   return (
     <main className="ending-screen">
-      <img src="/assets/rooms/rover-uplink.png" alt="" />
+      <img src={`${import.meta.env.BASE_URL}assets/rooms/rover-uplink.png`} alt="" />
       <div className="ending-screen__wash" />
       <section className="ending-card">
         <span>RED TRANSCENDENCE / SAFE HOLD</span>

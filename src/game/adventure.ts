@@ -82,6 +82,8 @@ export interface Item {
   glyph: string;
 }
 
+const roomAsset = (filename: string) => `${import.meta.env.BASE_URL}assets/rooms/${filename}`;
+
 export interface Note {
   id: string;
   title: string;
@@ -263,7 +265,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "cryo",
     name: "Cryostasis Chamber 2",
     sector: "Research Bay 01",
-    image: "/assets/rooms/cryo-chamber.png",
+    image: roomAsset("cryo-chamber.png"),
     description:
       "Cold vapor peels from your open pod. Two neighboring coffins still glow; everything else has learned to rust.",
     ambience: "POD THERMAL FAULT / LOCAL CLOCK UNTRUSTED",
@@ -305,7 +307,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "lab",
     name: "Experiment Chamber",
     sector: "Research Bay 01",
-    image: "/assets/rooms/broken-research-lab.png",
+    image: roomAsset("broken-research-lab.png"),
     description:
       "Red daylight leaks through a wall that used to be load-bearing. Something green stirs in the dead projector.",
     ambience: "LAB PRESSURE 38% / ARCHIVE BUS OFFLINE",
@@ -378,7 +380,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "power",
     name: "Power Junction",
     sector: "Research Bay 01",
-    image: "/assets/rooms/power-junction.png",
+    image: roomAsset("power-junction.png"),
     description:
       "Three surviving circuits ask for more power than the old generator can make. A fourth bus is burned clean through.",
     ambience: "GENERATOR OUTPUT 160 N / AUXILIARY BUS OPEN",
@@ -434,7 +436,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "decon",
     name: "Decontamination Hub",
     sector: "Research Bay 01",
-    image: "/assets/rooms/decontamination-hall.png",
+    image: roomAsset("decontamination-hall.png"),
     description:
       "The corridor breathes again. A red sterile bulkhead and a blue crew passage wait beneath signs erased by time.",
     ambience: "PRESSURE NOMINAL / NO ACTIVE PERSONNEL",
@@ -483,7 +485,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "clean",
     name: "Clean Room",
     sector: "Research Bay 01",
-    image: "/assets/rooms/clean-room.png",
+    image: roomAsset("clean-room.png"),
     description:
       "The room is absurdly pristine. Automated air jets still perform their little ritual for an audience of dust.",
     ambience: "STERILITY 81% / MATERIALS CABINET SEALED",
@@ -539,7 +541,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "medical",
     name: "Medical Bay",
     sector: "Research Bay 01",
-    image: "/assets/rooms/medical-bay.png",
+    image: roomAsset("medical-bay.png"),
     description:
       "The surgical chair is still aimed at the ceiling. The autoforge waits with the patience of a trap.",
     ambience: "MEDICAL INVENTORY EXPIRED / AUTOFORGE READY",
@@ -602,7 +604,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "annex",
     name: "Cryo Annex",
     sector: "Research Bay 01",
-    image: "/assets/rooms/cryo-annex.png",
+    image: roomAsset("cryo-annex.png"),
     description:
       "Seven blue coffins drink from an isolated power loop. Their occupants are alive in the narrowest possible sense.",
     ambience: "7 VIABLE / REVIVAL FACILITIES UNAVAILABLE",
@@ -642,7 +644,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "quarters",
     name: "Crew Quarters",
     sector: "Research Bay 01",
-    image: "/assets/rooms/crew-quarters.png",
+    image: roomAsset("crew-quarters.png"),
     description:
       "Someone left a paper notebook open beneath a wall of photographs. The bunk across from it was never made.",
     ambience: "OCCUPANCY 0 / PERSONAL ARCHIVE LOCAL",
@@ -705,7 +707,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "mess",
     name: "Mess / Recreation",
     sector: "Research Bay 01",
-    image: "/assets/rooms/mess-rec.png",
+    image: roomAsset("mess-rec.png"),
     description:
       "A blue ocean rolls silently across the recreation wall. No ocean existed on this planet when the image was recorded.",
     ambience: "SIMULATION LOOP 323,991,407 / AUDIO LOST",
@@ -762,7 +764,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "comms",
     name: "Minor Comms",
     sector: "Research Bay 01",
-    image: "/assets/rooms/comms-room.png",
+    image: roomAsset("comms-room.png"),
     description:
       "A stubborn waveform repeats beneath the static. Through the cracked glass, a dark arc crosses the red sky.",
     ambience: "LOCAL CARRIER DETECTED / SOURCE UNKNOWN",
@@ -818,7 +820,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "exterior",
     name: "Station Exterior",
     sector: "Khepri Basin",
-    image: "/assets/rooms/station-exterior.png",
+    image: roomAsset("station-exterior.png"),
     description:
       "Red dust moves like water around your boots. Above the station, a machine large enough to counterfeit a moon turns without sound.",
     ambience: "EXTERNAL ATMOSPHERE TOXIC / BEACON 22 KM",
@@ -867,7 +869,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "canyon",
     name: "Basalt Canyon",
     sector: "Khepri Basin",
-    image: "/assets/rooms/basalt-canyon.png",
+    image: roomAsset("basalt-canyon.png"),
     description:
       "The sky becomes a white wound. Apollo says the ash front will arrive soon, then politely reminds you that time only advances when you act.",
     ambience: "TERRAFORMER STRIKE 01 / ASH FRONT APPROACHING",
@@ -916,7 +918,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "rover",
     name: "Cargo Rover Khepri-6",
     sector: "Eastern Basin",
-    image: "/assets/rooms/cargo-rover.png",
+    image: roomAsset("cargo-rover.png"),
     description:
       "The rover never reached its ship. It became a house, then a monument, then only a coordinate that refused to die.",
     ambience: "BEACON LOCAL / MAIN DRIVE IRRECOVERABLE",
@@ -966,7 +968,7 @@ export const rooms: Record<RoomId, Room> = {
     id: "uplink",
     name: "Rover Command Cabin",
     sector: "Khepri-6",
-    image: "/assets/rooms/rover-uplink.png",
+    image: roomAsset("rover-uplink.png"),
     description:
       "The terraformer fills the broken windshield. Three sockets wait beneath a console designed to ask a dead civilization for permission.",
     ambience: "REMOTE AUTHORITY POSSIBLE / ONE TRANSMISSION",
